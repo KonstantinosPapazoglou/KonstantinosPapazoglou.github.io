@@ -53,9 +53,9 @@
     .proof{background:var(--white);border-bottom:1px solid var(--line)}.proof .shell{display:grid;grid-template-columns:repeat(3,1fr)}.proof-item{min-height:116px;padding:25px 22px;border-right:1px solid var(--line)}.proof-item:first-child{border-left:1px solid var(--line)}.proof-label{display:block;color:var(--blue);font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.proof strong{display:block;margin-top:5px;font-family:Georgia,serif;font-size:1.15rem;line-height:1.25}
     section{padding:88px 0}.section-grid{display:grid;grid-template-columns:minmax(210px,.65fr) minmax(0,1.35fr);gap:65px}.section-title h2{margin:0;font-family:Georgia,serif;font-size:clamp(2.1rem,4vw,3.4rem);font-weight:400;letter-spacing:-.045em;line-height:1}.section-title .eyebrow{color:var(--blue)}.body-copy{font-size:1.08rem}.body-copy p:first-child{margin-top:0}.quiet{color:var(--muted)}.profile-quote{margin:34px 0 0;border-left:3px solid var(--gold);padding:0 0 0 20px;color:#314354;font-family:Georgia,serif;font-size:1.27rem;line-height:1.45}
     .timeline{border-top:1px solid var(--line)}.role{display:grid;grid-template-columns:145px 1fr;gap:28px;padding:25px 0;border-bottom:1px solid var(--line)}.date{color:var(--blue);font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.role h3{margin:0 0 4px;font-size:1.08rem}.role p{margin:0;color:var(--muted)}.role .tag{display:inline-block;margin-top:8px;color:#7a5a1e;font-size:.71rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.feature{background:var(--ink);color:#fff}.feature .section-title h2{color:#fff}.feature .section-title .eyebrow{color:var(--gold)}.feature .body-copy{color:#d5e0e9}.feature .body-copy a{color:#f1cb82}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}.card{border:1px solid rgba(255,255,255,.2);padding:23px}.card h3{margin:0 0 10px;color:var(--gold);font-size:.83rem;letter-spacing:.09em;text-transform:uppercase}.card p{margin:0;color:#d5e0e9;font-size:.94rem}
-    .gallery{padding-top:0}.image-note{margin:0 0 27px;color:var(--muted);font-size:.9rem}.gallery-grid{display:grid;grid-template-columns:1.35fr .65fr .65fr;gap:14px}.photo{position:relative;min-height:250px;overflow:hidden;background:linear-gradient(140deg,#17334f,#0c1723);border:1px solid #263e55}.photo:first-child{min-height:390px}.photo img{display:block;width:100%;height:100%;object-fit:cover}.photo:has(img[src=""]){display:none}.photo-label{position:absolute;left:0;right:0;bottom:0;margin:0;padding:30px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.placeholder{display:grid;place-items:center;min-height:inherit;padding:22px;color:#a9bed0;text-align:center;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.gallery-grid .photo:nth-child(2){min-height:188px}.gallery-grid .photo:nth-child(3){min-height:188px}
+    .gallery{padding-top:0}.image-note{margin:0 0 27px;color:var(--muted);font-size:.9rem}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.photo{position:relative;min-height:250px;overflow:hidden;background:linear-gradient(140deg,#17334f,#0c1723);border:1px solid #263e55}.photo.featured{grid-column:span 2;min-height:420px}.photo img{display:block;width:100%;height:100%;object-fit:cover}.photo:has(img[src=""]){display:none}.photo-label{position:absolute;left:0;right:0;bottom:0;margin:0;padding:30px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.placeholder{display:grid;place-items:center;min-height:inherit;padding:22px;color:#a9bed0;text-align:center;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
     .sources{background:#eaf0f4}.source-list{margin:0;padding:0;list-style:none}.source-list li{padding:19px 0;border-bottom:1px solid #cad4dc}.source-list a{color:#123f65;font-weight:750;text-decoration-thickness:1px;text-underline-offset:4px}.source-list small{display:block;margin-top:4px;color:var(--muted)}.contact{background:var(--blue);color:#fff}.contact h2{margin:0 0 19px;font-family:Georgia,serif;font-size:clamp(2.4rem,5vw,4.4rem);font-weight:400;letter-spacing:-.06em;line-height:.98}.contact p{max-width:650px;margin:0 0 28px;color:#e5eef5;font-size:1.12rem}.contact .button{border-color:#fff}.contact .button.primary{background:#fff;color:#123f65}.footer{padding:30px 0;background:#07101b;color:#afbdca;font-size:.8rem}.footer .shell{display:flex;align-items:center;justify-content:space-between;gap:18px}.footer a{color:#fff}
-    @media (max-width:760px){.shell{width:min(100% - 30px,1140px)}.bar{padding:16px 0;align-items:flex-start}.nav{gap:11px 16px;justify-content:flex-start}.nav a{font-size:.7rem}.proof .shell{grid-template-columns:1fr}.proof-item,.proof-item:first-child{min-height:auto;border-left:none;border-right:none;border-bottom:1px solid var(--line)}.section-grid{grid-template-columns:1fr;gap:28px}section{padding:62px 0}.role{grid-template-columns:1fr;gap:6px}.cards,.gallery-grid{grid-template-columns:1fr}.photo:first-child,.gallery-grid .photo:nth-child(2),.gallery-grid .photo:nth-child(3){min-height:245px}.footer .shell{align-items:flex-start;flex-direction:column}.hero{padding-bottom:70px}}
+    @media (max-width:760px){.shell{width:min(100% - 30px,1140px)}.bar{padding:16px 0;align-items:flex-start}.nav{gap:11px 16px;justify-content:flex-start}.nav a{font-size:.7rem}.proof .shell{grid-template-columns:1fr}.proof-item,.proof-item:first-child{min-height:auto;border-left:none;border-right:none;border-bottom:1px solid var(--line)}.section-grid{grid-template-columns:1fr;gap:28px}section{padding:62px 0}.role{grid-template-columns:1fr;gap:6px}.cards,.gallery-grid{grid-template-columns:1fr}.photo.featured{grid-column:auto;min-height:290px}.photo{min-height:245px}.footer .shell{align-items:flex-start;flex-direction:column}.hero{padding-bottom:70px}}
   </style>
 </head>
 <body>
@@ -64,7 +64,7 @@
     <div class="shell bar">
       <a class="brand" href="#top">Konstantinos Papazoglou<span>Basketball Coach</span></a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#profile">Profile</a><a href="#career">Career</a><a href="#bbl">BBL</a><a href="#references">References</a><a href="#contact">Contact</a>
+        <a href="#profile">Profile</a><a href="#bbl">BBL Case Study</a><a href="#development">Development</a><a href="#videos">Video</a><a href="#career">Career</a><a href="#contact">Contact</a>
       </nav>
     </div>
     <div id="top" class="hero">
@@ -99,10 +99,10 @@
 
     <section id="bbl" class="feature">
       <div class="shell section-grid">
-        <div class="section-title"><p class="eyebrow">2025/26</p><h2>BBL Head Coach experience</h2></div>
+        <div class="section-title"><p class="eyebrow">2025/26 case study</p><h2>BBL Head Coach experience</h2></div>
         <div>
-          <p>As Head Coach at Basketball Löwen Braunschweig, I led the youngest roster in the German BBL while competing in the BBL and FIBA Europe Cup. The first FIBA Europe Cup round finished at 4–2, including wins over PAOK and Anwil.</p>
-          <p>The season began 7–7 across BBL and FIBA Europe Cup. Three U20 players and one U17 player made their BBL/FIBA Europe Cup debuts and became rotation contributors. As roster availability later declined, particularly among the frontcourt, I adapted roles, rotations and game plans while protecting competitive standards and the locker-room environment.</p>
+          <p>In my first full BBL Head Coach season, I led the youngest roster in the German BBL while competing in the BBL and FIBA Europe Cup. The first FIBA Europe Cup round finished at 4–2, including wins over PAOK and Anwil.</p>
+          <p>We started 7–7 across BBL and FIBA Europe Cup. Three U20 players and one U17 player made their BBL/FIBA Europe Cup debuts and became rotation contributors. As roster availability later declined, particularly among the frontcourt, I adjusted roles, rotations and game plans while protecting competitive standards and the locker-room environment.</p>
           <div class="cards"><div class="card"><h3>4–2</h3><p>FIBA Europe Cup first round, including wins over PAOK and Anwil.</p></div><div class="card"><h3>7–7</h3><p>Combined BBL/FIBA Europe Cup start to the 2025/26 season.</p></div><div class="card"><h3>Young talent</h3><p>Three U20 and one U17 players debuted across BBL and FIBA Europe Cup.</p></div></div>
         </div>
       </div>
@@ -113,7 +113,7 @@
         <div class="section-title"><p class="eyebrow">Player development</p><h2>Development inside competition</h2></div>
         <div class="body-copy">
           <p>Player development is a central part of my coaching identity. I work to give young players meaningful responsibilities within a demanding professional environment — individual growth must support the team’s competitive standards, not sit outside them.</p>
-          <p>My BBL work includes the development environments of Dennis Schröder, Sananda Fru, David Krämer, David N’Guessan and Jilson Bango. In 2024/25, Braunschweig finished third in the BBL regular season; in 2020/21, the team finished ninth, one win from the playoffs, with the league’s youngest roster and three imports.</p>
+          <p>I worked with Dennis Schröder, Sananda Fru, David Krämer, David N’Guessan and Jilson Bango during important stages of their development in professional basketball. Player growth is always collective work; my contribution has been to create the tactical clarity, responsibility and everyday standards that allow players to progress.</p>
           <p class="quiet">My work also covers offensive and defensive coordination, practice and game planning, pre-game tactical presentation, in-game adjustment, team culture and cross-cultural communication.</p>
         </div>
       </div>
@@ -147,14 +147,31 @@
       </div>
     </section>
 
+    <section id="videos" class="sources">
+      <div class="shell section-grid">
+        <div class="section-title"><p class="eyebrow">Selected games</p><h2>Video room</h2></div>
+        <div>
+          <p class="image-note">A small selection of full games from the 2025/26 BBL and FIBA Europe Cup campaign. These links are included so my coaching work can be viewed in context.</p>
+          <ul class="source-list">
+            <li><a href="https://youtu.be/tjt4RIQTTL0" target="_blank" rel="noopener noreferrer">Braunschweig vs PAOK — FIBA Europe Cup 2025/26</a><small>Full game.</small></li>
+            <li><a href="https://youtu.be/UMg0yR2hJho" target="_blank" rel="noopener noreferrer">PAOK vs Braunschweig — FIBA Europe Cup 2025/26</a><small>Full game.</small></li>
+            <li><a href="https://youtu.be/MQecZITGKEA" target="_blank" rel="noopener noreferrer">Braunschweig vs Anwil — FIBA Europe Cup 2025/26</a><small>Full game.</small></li>
+            <li><a href="https://www.dyn.sport/event/Basketball_Löwen_Braunschweig_Telekom_Baskets_Bonn_97838" target="_blank" rel="noopener noreferrer">Braunschweig vs Bonn — BBL 2025/26</a><small>Full game on Dyn; subscription may be required.</small></li>
+            <li><a href="https://www.magentasport.de/event/basketball-loewen-braunschweig-mlp-academics-heidelberg/5492150/332366" target="_blank" rel="noopener noreferrer">Braunschweig vs Heidelberg — BBL comeback</a><small>Game from the 2021/22 season.</small></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="gallery" aria-labelledby="gallery-heading">
       <div class="shell">
         <p class="eyebrow">Coaching photography</p><h2 id="gallery-heading" style="margin-top:0;font-family:Georgia,serif;font-size:clamp(2.1rem,4vw,3.4rem);font-weight:400;letter-spacing:-.045em">On the court &amp; on the sideline</h2>
-        <p class="image-note">Selected images show game-day leadership, a timeout huddle and courtside direction in Braunschweig.</p>
+        <p class="image-note">A selected gallery of game-day leadership, tactical communication and team connection in Braunschweig.</p>
         <div class="gallery-grid">
-          <div class="photo"><img src="assets/images/hero-kostas-papazoglou.jpg" alt="Konstantinos Papazoglou coaching during a basketball game" onerror="this.remove()"><div class="placeholder">Image unavailable</div><p class="photo-label">Game-day leadership</p></div>
+          <div class="photo featured"><img src="assets/images/social-preview.jpg" alt="Konstantinos Papazoglou directing the team courtside during a basketball game" onerror="this.remove()"><div class="placeholder">Image unavailable</div><p class="photo-label">Courtside direction</p></div>
           <div class="photo"><img src="assets/images/kostas-papazoglou-courtside.jpg" alt="Konstantinos Papazoglou speaking to players during a timeout" onerror="this.remove()"><div class="placeholder">Image unavailable</div><p class="photo-label">Timeout preparation</p></div>
           <div class="photo"><img src="assets/images/kostas-papazoglou-training.jpg" alt="Konstantinos Papazoglou instructing players in a team huddle" onerror="this.remove()"><div class="placeholder">Image unavailable</div><p class="photo-label">Team communication</p></div>
+          <div class="photo"><img src="assets/images/hero-kostas-papazoglou.jpg" alt="Konstantinos Papazoglou coaching during a basketball game" onerror="this.remove()"><div class="placeholder">Image unavailable</div><p class="photo-label">Game-day leadership</p></div>
         </div>
       </div>
     </section>
@@ -176,7 +193,7 @@
     </section>
 
     <section id="contact" class="contact">
-      <div class="shell"><p class="eyebrow" style="color:#f1cb82">Professional enquiries</p><h2>Let’s talk basketball.</h2><p>For Head Coach opportunities, professional basketball enquiries or media contact, please get in touch directly.</p><div class="actions"><a class="button primary" href="mailto:cmkostas@hotmail.com">cmkostas@hotmail.com</a><a class="button" href="https://de.linkedin.com/in/konstantinos-papazoglou-006787bb" target="_blank" rel="noopener noreferrer">LinkedIn profile</a></div></div>
+      <div class="shell"><p class="eyebrow" style="color:#f1cb82">Professional enquiries</p><h2>Let’s talk basketball.</h2><p>For Head Coach opportunities, professional basketball enquiries or media contact, please get in touch directly.</p><div class="actions"><a class="button primary" href="mailto:cmkostas@hotmail.com">cmkostas@hotmail.com</a><a class="button" href="assets/documents/Konstantinos_Papazoglou_CV.pdf" download>Download coaching CV</a><a class="button" href="https://de.linkedin.com/in/konstantinos-papazoglou-006787bb" target="_blank" rel="noopener noreferrer">LinkedIn profile</a></div></div>
     </section>
   </main>
   <footer class="footer"><div class="shell"><span>© 2026 Konstantinos Papazoglou</span><span><a href="https://konstantinospapazoglou.github.io/">konstantinospapazoglou.github.io</a> · Last reviewed November 2026</span></div></footer>
