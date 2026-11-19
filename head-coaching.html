@@ -63,6 +63,11 @@
     .hero{position:relative;overflow:hidden;padding:clamp(70px,12vw,140px) 0 88px;background-image:linear-gradient(90deg,rgba(9,18,31,.98) 0%,rgba(9,18,31,.84) 37%,rgba(9,18,31,.27) 72%,rgba(9,18,31,.16)),url("assets/images/hero-kostas-papazoglou.jpg");background-position:center,70% center;background-size:cover}.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(213,173,98,.28);border-radius:50%;right:-190px;bottom:-230px}.hero .shell{position:relative;z-index:1}.eyebrow{margin:0 0 16px;color:var(--gold);font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.hero h1{max-width:850px;margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.2rem,8vw,6.7rem);font-weight:400;letter-spacing:-.065em;line-height:.93}.hero .intro{max-width:720px;margin:29px 0 33px;color:#d9e3ed;font-size:clamp(1.05rem,2.1vw,1.33rem)}.actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-block;border:1px solid var(--gold);padding:11px 18px;color:#fff;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-decoration:none;text-transform:uppercase}.button.primary{background:var(--gold);color:#0b1722}.button:hover{background:#fff;color:var(--ink);border-color:#fff}
     .proof{background:var(--white);border-bottom:1px solid var(--line)}.proof .shell{display:grid;grid-template-columns:repeat(4,1fr)}.proof-item{min-height:116px;padding:25px 22px;border-right:1px solid var(--line)}.proof-item:first-child{border-left:1px solid var(--line)}.proof-label{display:block;color:var(--blue);font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.proof strong{display:block;margin-top:5px;font-family:Georgia,serif;font-size:1.15rem;line-height:1.25}
     section{padding:88px 0}.section-grid{display:grid;grid-template-columns:minmax(210px,.65fr) minmax(0,1.35fr);gap:65px}.section-title h2{margin:0;font-family:Georgia,serif;font-size:clamp(2.1rem,4vw,3.4rem);font-weight:400;letter-spacing:-.045em;line-height:1}.section-title .eyebrow{color:var(--blue)}.body-copy{font-size:1.08rem}.body-copy p:first-child{margin-top:0}.quiet{color:var(--muted)}.profile-quote{margin:34px 0 0;border-left:3px solid var(--gold);padding:0 0 0 20px;color:#314354;font-family:Georgia,serif;font-size:1.27rem;line-height:1.45}
+    /* High-contrast cards on light sections: dark text on white cards */
+    #phase-one .cards .card,#phase-two .cards .card{background:#fff;border:1px solid #cbd5df;box-shadow:0 8px 22px rgba(9,18,31,.06)}
+    #phase-one .cards .card h3,#phase-two .cards .card h3{color:#1b527f}
+    #phase-one .cards .card p,#phase-two .cards .card p{color:#26394b}
+    #phase-one .cards .card p strong,#phase-two .cards .card p strong{color:#10243b!important}
     /* High-contrast cards on the light Competitive Performance section */
     #competitive-performance .cards .card{background:#fff;border:1px solid #cbd5df;box-shadow:0 8px 22px rgba(9,18,31,.06)}
     #competitive-performance .cards .card h3{color:#1b527f}
@@ -105,104 +110,106 @@
 </div>
 </div>
 </section>
-<section id="competitive-performance">
+<section id="phase-one">
 <div class="shell section-grid">
-<div class="section-title">
-<p class="eyebrow">01 · Competitive performance</p>
-<h2>Results across the campaign</h2>
-</div>
-<div class="body-copy">
-<div class="cards">
-<div class="card">
-<h3>Initial phase</h3>
-<p><strong style="font-size:1.7rem;color:var(--gold)">7–7</strong><br/>Combined record across the BBL and FIBA Europe Cup during the initial competitive phase.</p>
-</div>
-<div class="card">
-<h3>FIBA Europe Cup</h3>
-<p><strong style="font-size:1.7rem;color:var(--gold)">4–2</strong><br/>First-round record, including wins over PAOK and Anwil.</p>
-</div>
-<div class="card">
-<h3>Home sequence</h3>
-<p><strong style="font-size:1.7rem;color:var(--gold)">6 wins</strong><br/>Six consecutive home victories across competitions.</p>
-<p class="card-metrics">
-<span><strong>77%</strong> Player availability</span>
-<span><strong>88.7</strong> Points scored per game</span>
-<span><strong>78.3</strong> Points conceded per game</span>
-</p>
-</div>
-<div class="card">
-<h3>Later BBL phase</h3>
-<p><strong style="font-size:1.7rem;color:var(--gold)">1–9</strong><br/>Record during the later BBL stretch.</p>
-</div>
-</div>
-<p style="margin-top:28px">The six-game home winning sequence included important results across both competitions. The team defeated Rostock 92–71 in the BBL and Bonn 89–80 in the BBL, while also recording FIBA Europe Cup wins over PAOK and Anwil during the wider opening phase.</p>
-<p>The competitive record is presented in phases because the 7–7 figure refers to the initial combined period across two competitions, while 1–9 refers specifically to the later BBL stretch. They are not directly additive and should not be read as the full-season record.</p>
-</div>
+  <div class="section-title">
+    <p class="eyebrow">01 · Phase One</p>
+    <h2>Pre-FIBA Break: Establishing Competitiveness</h2>
+  </div>
+  <div class="body-copy">
+    <p>The opening phase established a competitive foundation across two competitions. The team recorded a combined 7–7 record, including a 4–2 record in the FIBA Europe Cup first round, while building a six-game home winning streak across competitions.</p>
+    <p>This was achieved with a young competitive structure: the second-youngest roster in the BBL and the youngest roster in the FIBA Europe Cup. Five young players were integrated into the competitive setup — one U22 player, three U20 players and one U17 player.</p>
+    <p>The team was already dealing with significant frontcourt absences. As established players became unavailable, Romario Holloway and Eliah Braun stepped into increased roles, providing important internal alternatives and helping the team maintain competitive continuity.</p>
+    <div class="cards">
+      <div class="card"><h3>Combined Record</h3><p><strong style="font-size:1.7rem;color:var(--gold)">7–7</strong><br/>Across the BBL and FIBA Europe Cup during the opening competitive phase.</p></div>
+      <div class="card"><h3>FIBA Europe Cup</h3><p><strong style="font-size:1.7rem;color:var(--gold)">4–2</strong><br/>First-round record.</p></div>
+      <div class="card"><h3>Home Sequence</h3><p><strong style="font-size:1.7rem;color:var(--gold)">6 wins</strong><br/>Six consecutive home victories across competitions.</p></div>
+    </div>
+    <p style="margin-top:28px">The six-game home winning sequence included important results across both competitions. The team defeated Rostock 92–71 in the BBL and Bonn 89–80 in the BBL, while also recording FIBA Europe Cup wins over PAOK and Anwil during the wider opening phase.</p>
+  </div>
 </div>
 </section>
+
+<section class="feature" id="fiba-break-turning-point">
+<div class="shell section-grid">
+  <div class="section-title">
+    <p class="eyebrow">Turning Point · November FIBA Break</p>
+    <h2>Losing the Solutions to the Original Problems</h2>
+  </div>
+  <div class="body-copy">
+    <p>The FIBA break marked a significant turning point in the season. The team was progressively losing not only established rotation players, but also the younger internal alternatives who had stepped forward to compensate for the original absences.</p>
+    <p>Romario Holloway and Eliah Braun, who had taken on increased responsibilities during the initial period of frontcourt shortages, also became unavailable through injury. The team was therefore losing both original rotation options and some of the solutions developed to cover their absence.</p>
+    <div class="card" style="margin-top:26px">
+      <h3>The Club's Public Account</h3>
+      <p>Basketball Löwen Braunschweig addressed the sporting situation and the sequence of absences in its public statement of 13 January 2026.</p>
+      <p style="margin-top:12px"><a href="https://www.basketball-loewen.de/die-sportliche-lage-ein-offenes-wort/" target="_blank" rel="noopener noreferrer">Die sportliche Lage: ein offenes Wort — 13 January 2026</a></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="phase-two">
+<div class="shell section-grid">
+  <div class="section-title">
+    <p class="eyebrow">02 · Phase Two</p>
+    <h2>Post-FIBA Break: Loss of Competitive Continuity</h2>
+  </div>
+  <div class="body-copy">
+    <p>Following the break, further absences progressively reduced the available rotation. The impact extended beyond the number of players available on game day: it also affected the team's ability to prepare under representative BBL-level practice conditions.</p>
+    <p>With limited frontcourt availability, it became increasingly difficult to reproduce the size, physicality and positional matchups normally encountered in BBL competition during daily practice. This placed additional demands on game preparation, tactical adjustments and the workload carried by the remaining players.</p>
+    <p>The availability figures reflect this progression. Overall roster availability declined from 79% in the opening competitive phase to 71% in the later period. Frontcourt availability fell from 64% to 54%.</p>
+    <p>The later BBL stretch finished with a 1–9 record. These results must be acknowledged. They also form part of a period in which roster availability, frontcourt balance and the conditions for representative preparation had changed substantially.</p>
+    <div class="cards">
+      <div class="card"><h3>Later BBL Phase</h3><p><strong style="font-size:1.7rem;color:var(--gold)">1–9</strong><br/>Record during the later BBL stretch.</p></div>
+      <div class="card"><h3>Overall Roster</h3><p><strong style="font-size:1.55rem;color:var(--gold)">79% → 71%</strong><br/>Availability from the opening competitive phase to the post-break period.</p></div>
+      <div class="card"><h3>Frontcourt</h3><p><strong style="font-size:1.55rem;color:var(--gold)">64% → 54%</strong><br/>Availability from the opening competitive phase to the post-break period.</p></div>
+      <div class="card"><h3>Practice Conditions</h3><p>Reduced ability to reproduce representative BBL-level size, physicality and positional matchups in practice.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="feature" id="season-wide-frontcourt">
+<div class="shell section-grid">
+  <div class="section-title">
+    <p class="eyebrow">Season-Wide Snapshot · 26 Games</p>
+    <h2>Frontcourt Availability Across the Sample</h2>
+  </div>
+  <div class="body-copy">
+    <p>These figures describe the 26-game sample as a whole. They are not assigned to either of the two competitive phases.</p>
+    <div class="cards">
+      <div class="card"><h3>All Four Bigs</h3><p><strong style="font-size:1.55rem;color:var(--gold)">0 of 26 games</strong><br/>There was no game in which all four bigs were simultaneously available.</p></div>
+      <div class="card"><h3>Three Foreign Bigs</h3><p><strong style="font-size:1.55rem;color:var(--gold)">2 of 26 games</strong><br/>All three were available together in only two games — both wins.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
 <section class="feature" id="player-development">
 <div class="shell section-grid">
-<div class="section-title">
-<p class="eyebrow">02 · Roster profile</p>
-<h2>Player Development Within Competition</h2>
-</div>
-<div class="body-copy">
-<p>The team operated with the second-youngest roster in the BBL and the youngest roster in the FIBA Europe Cup. Five young players were part of the competitive setup: one U22 player, three U20 players and one U17 player.</p>
-<p>As established players became unavailable at different stages, several of these younger players assumed greater responsibilities within the rotation. Their involvement formed part of the team's competitive structure across the two competitions.</p>
-<p>The age profile and player integration are included here as elements of the season's roster and development picture, alongside the results and availability data.</p>
-</div>
+  <div class="section-title">
+    <p class="eyebrow">03 · Roster Profile</p>
+    <h2>Player Development Within Competition</h2>
+  </div>
+  <div class="body-copy">
+    <p>The team operated with the second-youngest roster in the BBL and the youngest roster in the FIBA Europe Cup. Five young players were part of the competitive setup: one U22 player, three U20 players and one U17 player.</p>
+    <p>As established players became unavailable at different stages, several of these younger players assumed greater responsibilities within the rotation. Their involvement formed part of the team's competitive structure across the two competitions.</p>
+    <p>The age profile and player integration are included here as elements of the season's roster and development picture, alongside the results and availability data.</p>
+  </div>
 </div>
 </section>
+
 <section id="coaching-approach">
 <div class="shell section-grid">
-<div class="section-title">
-<p class="eyebrow">03 · Coaching work</p>
-<h2>Adaptation &amp; Decision-Making</h2>
-</div>
-<div class="body-copy">
-<p>Across the campaign, coaching work included adjustments to rotations, tactical roles, game plans and practice workloads as the personnel available changed. The focus was on maintaining clear responsibilities, defensive activity and competitive standards within the rotation available for each game.</p>
-<p>These adjustments were part of the day-to-day coaching process across a two-competition schedule. They are presented as the practical coaching response to the evolving team and roster situation, rather than as an explanation for any single result.</p>
-</div>
-</div>
-</section>
-<section class="feature" id="availability">
-<div class="shell section-grid">
-<div class="section-title">
-<p class="eyebrow">04 · Roster data</p>
-<h2>Roster Availability &amp; Competitive Context</h2>
-</div>
-<div class="body-copy">
-<p>Roster availability changed over the course of the season, with absences affecting both the frontcourt and players who had taken on increased rotation responsibilities.</p>
-<h3 style="margin:30px 0 12px;color:var(--gold);font-size:1.15rem">Availability indicators</h3>
-<div class="cards">
-<div class="card">
-<h3>Overall roster</h3>
-<p><strong style="font-size:1.55rem;color:var(--gold)">79% → 71%</strong><br/>Availability from the initial competitive phase to the post-break period.</p>
-</div>
-<div class="card">
-<h3>Frontcourt</h3>
-<p><strong style="font-size:1.55rem;color:var(--gold)">64% → 54%</strong><br/>Availability from the initial competitive phase to the post-break period.</p>
-</div>
-<div class="card">
-<h3>26-game sample</h3>
-<p><strong style="font-size:1.55rem;color:var(--gold)">0 games</strong><br/>Across the 26-game sample, all four bigs were never available simultaneously.</p>
-</div>
-<div class="card">
-<h3>Foreign bigs</h3>
-<p><strong style="font-size:1.55rem;color:var(--gold)">2 games</strong><br/>The three foreign bigs appeared together in only two games — both resulting in wins.</p>
-</div>
-</div>
-<h3 style="margin:34px 0 12px;color:var(--gold);font-size:1.15rem">Roster changes and availability</h3>
-<p>Following Josh Hawley’s initial injury, the club chose to manage the situation internally rather than immediately add an external replacement. Romario Holloway and Eliah Braun received increased opportunities within the available group, as documented in the <a href="https://www.basketball-loewen.de/die-sportliche-lage-ein-offenes-wort/" rel="noopener noreferrer" target="_blank">official Basketball Löwen Braunschweig statement on the team’s injury situation</a>.</p>
-<p>After Hawley returned, he experienced another longer-term absence. At different stages, Philipp Hartwich and Luka Ščuka were also unavailable, followed by Holloway and Braun, who had become internal rotation alternatives. The availability figures above describe the change in the roster across the periods analysed.</p>
-<h3 style="margin:34px 0 12px;color:var(--gold);font-size:1.15rem">Examples from the competition</h3>
-<ol class="case-steps">
-<li><strong>Rostock — 92–71.</strong> Braunschweig recorded a BBL win while Josh Hawley and Philipp Hartwich were unavailable.</li>
-<li><strong>PAOK — 87–88.</strong> In the FIBA Europe Cup, Braunschweig led 87–86 with 0.5 seconds remaining before losing by one point.</li>
-<li><strong>Bonn — 89–80.</strong> Two days after the PAOK game, Braunschweig recorded a BBL home win over Bonn despite the continued unavailability of Luka Ščuka and Philipp Hartwich. It was the sixth consecutive home win across competitions.</li>
-</ol>
-<p style="margin-top:28px">The availability figures and match examples provide the roster context for the season. They are presented alongside the competitive record and coaching work, not as a substitute for evaluating the results.</p>
-</div>
+  <div class="section-title">
+    <p class="eyebrow">04 · Coaching Work</p>
+    <h2>Adaptation &amp; Decision-Making</h2>
+  </div>
+  <div class="body-copy">
+    <p>Across the campaign, coaching work included adjustments to rotations, tactical roles, game plans and practice workloads as the personnel available changed. The focus was on maintaining clear responsibilities, defensive activity and competitive standards within the rotation available for each game.</p>
+    <p>These adjustments were part of the day-to-day coaching process across a two-competition schedule. They are presented as the practical coaching response to the evolving team and roster situation, rather than as an explanation for any single result.</p>
+    <p style="margin-top:28px;color:var(--ink);background:#fff;border-left:3px solid var(--gold);padding:16px 20px;font-family:Georgia,serif;font-size:1.2rem;line-height:1.45">Performance should be evaluated in relation to the resources and competitive conditions available.</p>
+  </div>
 </div>
 </section>
 
