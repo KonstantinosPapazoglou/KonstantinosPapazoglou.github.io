@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://konstantinospapazoglou.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://konstantinospapazoglou.com/coaching.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://konstantinospapazoglou.com/head-coaching.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://konstantinospapazoglou.com/career.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://konstantinospapazoglou.com/media.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://konstantinospapazoglou.com/public-record.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://konstantinospapazoglou.com/gbl-podcast-interview.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://konstantinospapazoglou.com/</loc><lastmod>2026-11-22</lastmod><priority>1.0</priority></url>
+  <url><loc>https://konstantinospapazoglou.com/coaching.html</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://konstantinospapazoglou.com/head-coaching.html</loc><lastmod>2026-11-22</lastmod><priority>0.9</priority></url>
+  <url><loc>https://konstantinospapazoglou.com/career.html</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://konstantinospapazoglou.com/media.html</loc><lastmod>2026-11-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://konstantinospapazoglou.com/public-record.html</loc><lastmod>2026-11-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://konstantinospapazoglou.com/gbl-podcast-interview.html</loc><lastmod>2026-11-22</lastmod><priority>0.6</priority></url>
 </urlset>
