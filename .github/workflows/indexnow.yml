@@ -1,0 +1,58 @@
+name: Notify search engines with IndexNow
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "*.html"
+      - "sitemap.xml"
+      - "robots.txt"
+      - "assets/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submit canonical website URLs to IndexNow
+        shell: bash
+        env:
+          INDEXNOW_KEY: "469da58dd9774810fdfb729dd048170e"
+        run: |
+          set -euo pipefail
+
+          cat > payload.json <<'JSON'
+          {
+            "host": "konstantinospapazoglou.com",
+            "key": "469da58dd9774810fdfb729dd048170e",
+            "keyLocation": "https://konstantinospapazoglou.com/469da58dd9774810fdfb729dd048170e.txt",
+            "urlList": [
+              "https://konstantinospapazoglou.com/",
+              "https://konstantinospapazoglou.com/coaching.html",
+              "https://konstantinospapazoglou.com/head-coaching.html",
+              "https://konstantinospapazoglou.com/career.html",
+              "https://konstantinospapazoglou.com/media.html",
+              "https://konstantinospapazoglou.com/public-record.html",
+              "https://konstantinospapazoglou.com/gbl-podcast-interview.html"
+            ]
+          }
+          JSON
+
+          status=$(curl --silent --show-error \
+            --output response.txt \
+            --write-out "%{http_code}" \
+            --request POST "https://api.indexnow.org/indexnow" \
+            --header "Content-Type: application/json; charset=utf-8" \
+            --data-binary @payload.json)
+
+          echo "IndexNow HTTP status: ${status}"
+          cat response.txt || true
+
+          if [[ "${status}" -lt 200 || "${status}" -ge 300 ]]; then
+            echo "IndexNow submission failed."
+            exit 1
+          fi
