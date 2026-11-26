@@ -11,7 +11,6 @@ Upload the files in this folder to the website root, replacing the existing vers
 - gbl-podcast-interview.html
 - sitemap.xml
 - robots.txt
-- braunschweig-2025-26-season-review.html
 
 Keep the existing /assets/ directory and its image, document and favicon files.
 
@@ -25,12 +24,8 @@ Content changes:
 - Updated sitemap to list only canonical, indexable URLs; the old alias is not included.
 - Added robots.txt with an explicit sitemap reference.
 
-Redirect note:
-The legacy Braunschweig review URL is retained as a noindex fallback redirect to head-coaching.html.
-GitHub Pages static hosting does not provide a guaranteed server-side HTTP 301 using plain HTML. If you later move hosting to a server/CDN that supports redirects, configure a true 301 from:
-  /braunschweig-2025-26-season-review.html
-to:
-  /head-coaching.html
+Braunschweig review note:
+The season review is consolidated into head-coaching.html. The obsolete standalone alias file has been removed; head-coaching.html is the sole canonical, indexable page for this material.
 
 After upload:
 1. Open /robots.txt and /sitemap.xml in a browser and confirm they load.
